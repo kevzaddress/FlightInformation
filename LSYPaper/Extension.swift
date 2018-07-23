@@ -1,9 +1,9 @@
 //
 //  Extension.swift
-//  LSYPaper
+//  FlightInfo
 //
-//  Created by 梁树元 on 1/2/16.
-//  Copyright © 2016 allsome.love. All rights reserved.
+//  Created by Kevin Smith on 22/7/18.
+//  Copyright © 2018 Kevin Smith. All rights reserved.
 //
 
 import UIKit
@@ -65,7 +65,7 @@ public extension UIView {
     }
 }
 
-public extension UIColor {
+/*public extension UIColor {
     
     public convenience init?(hexString: String) {
         self.init(hexString: hexString, alpha: 1.0)
@@ -116,4 +116,4 @@ public extension UIColor {
         let hexString = NSString(format: "%2X", hex)
         self.init(hexString: hexString as String , alpha: alpha)
     }
-}
+} */

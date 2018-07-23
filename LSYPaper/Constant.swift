@@ -1,9 +1,9 @@
 //
 //  Constant.swift
-//  Paragram
+//  FlightInfo
 //
-//  Created by 梁树元 on 11/28/15.
-//  Copyright © 2015 allsome.love. All rights reserved.
+//  Created by Kevin Smith on 22/7/18.
+//  Copyright © 2018 Kevin Smith. All rights reserved.
 //
 
 import UIKit
