@@ -1,9 +1,9 @@
 //
 //  NewsDetailCell.swift
-//  LSYPaper
+//  FlightInfo
 //
-//  Created by 梁树元 on 1/9/16.
-//  Copyright © 2016 allsome.love. All rights reserved.
+//  Created by Kevin Smith on 22/7/18.
+//  Copyright © 2018 Kevin Smith. All rights reserved.
 //
 
 import UIKit

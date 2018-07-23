@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EA78CF601C3809FD0092F84D"
-               BuildableName = "LSYPaper.app"
-               BlueprintName = "LSYPaper"
-               ReferencedContainer = "container:LSYPaper.xcodeproj">
+               BuildableName = "FlightInfo.app"
+               BlueprintName = "FlightInfo"
+               ReferencedContainer = "container:FlightInfo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA78CF601C3809FD0092F84D"
-            BuildableName = "LSYPaper.app"
-            BlueprintName = "LSYPaper"
-            ReferencedContainer = "container:LSYPaper.xcodeproj">
+            BuildableName = "FlightInfo.app"
+            BlueprintName = "FlightInfo"
+            ReferencedContainer = "container:FlightInfo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA78CF601C3809FD0092F84D"
-            BuildableName = "LSYPaper.app"
-            BlueprintName = "LSYPaper"
-            ReferencedContainer = "container:LSYPaper.xcodeproj">
+            BuildableName = "FlightInfo.app"
+            BlueprintName = "FlightInfo"
+            ReferencedContainer = "container:FlightInfo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA78CF601C3809FD0092F84D"
-            BuildableName = "LSYPaper.app"
-            BlueprintName = "LSYPaper"
-            ReferencedContainer = "container:LSYPaper.xcodeproj">
+            BuildableName = "FlightInfo.app"
+            BlueprintName = "FlightInfo"
+            ReferencedContainer = "container:FlightInfo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -227,7 +227,7 @@
 		EA65E9B41C859C710081EA5F /* Artist3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artist3@2x.png"; sourceTree = "<group>"; };
 		EA65E9B51C859C710081EA5F /* Artist4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artist4@2x.png"; sourceTree = "<group>"; };
 		EA65E9C01C8617AD0081EA5F /* Triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Triangle@2x.png"; sourceTree = "<group>"; };
-		EA78CF611C3809FD0092F84D /* LSYPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSYPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA78CF611C3809FD0092F84D /* FlightInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA78CF641C3809FD0092F84D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA78CF661C3809FD0092F84D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA78CF691C3809FD0092F84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -360,7 +360,7 @@
 		EA78CF621C3809FD0092F84D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA78CF611C3809FD0092F84D /* LSYPaper.app */,
+				EA78CF611C3809FD0092F84D /* FlightInfo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -552,9 +552,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA78CF601C3809FD0092F84D /* LSYPaper */ = {
+		EA78CF601C3809FD0092F84D /* FlightInfo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA78CF731C3809FD0092F84D /* Build configuration list for PBXNativeTarget "LSYPaper" */;
+			buildConfigurationList = EA78CF731C3809FD0092F84D /* Build configuration list for PBXNativeTarget "FlightInfo" */;
 			buildPhases = (
 				EA78CF5D1C3809FD0092F84D /* Sources */,
 				EA78CF5E1C3809FD0092F84D /* Frameworks */,
@@ -564,9 +564,9 @@
 			);
 			dependencies = (
 			);
-			name = LSYPaper;
+			name = FlightInfo;
 			productName = LSYPaper;
-			productReference = EA78CF611C3809FD0092F84D /* LSYPaper.app */;
+			productReference = EA78CF611C3809FD0092F84D /* FlightInfo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -586,7 +586,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA78CF5C1C3809FD0092F84D /* Build configuration list for PBXProject "LSYPaper" */;
+			buildConfigurationList = EA78CF5C1C3809FD0092F84D /* Build configuration list for PBXProject "FlightInfo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -599,7 +599,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA78CF601C3809FD0092F84D /* LSYPaper */,
+				EA78CF601C3809FD0092F84D /* FlightInfo */,
 			);
 		};
 /* End PBXProject section */
@@ -919,7 +919,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA78CF5C1C3809FD0092F84D /* Build configuration list for PBXProject "LSYPaper" */ = {
+		EA78CF5C1C3809FD0092F84D /* Build configuration list for PBXProject "FlightInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA78CF711C3809FD0092F84D /* Debug */,
@@ -928,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA78CF731C3809FD0092F84D /* Build configuration list for PBXNativeTarget "LSYPaper" */ = {
+		EA78CF731C3809FD0092F84D /* Build configuration list for PBXNativeTarget "FlightInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA78CF741C3809FD0092F84D /* Debug */,
