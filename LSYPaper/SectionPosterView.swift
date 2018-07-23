@@ -22,7 +22,7 @@ class SectionPosterView: UIView {
     override func awakeFromNib() {
         posterImageHeightConstraint.constant = POSTER_HEIGHT
         shadowImageHeightConstraint.constant = POSTER_HEIGHT
-        shadowImage.layer.transform = CATransform3DMakeRotation(CGFloat(M_PI), 1, 0, 0)
+        shadowImage.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi), 1, 0, 0)
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = CGRect(x: 0, y: 2 * POSTER_HEIGHT - SCREEN_HEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - POSTER_HEIGHT)

@@ -10,10 +10,10 @@ import UIKit
 
 class SectionData: NSObject {
     
-    var subTitle:String = ""
-    var title:String = ""
-    var icon:String = ""
-    var standByIcon:String = ""
+    @objc var subTitle:String = ""
+    @objc var title:String = ""
+    @objc var icon:String = ""
+    @objc var standByIcon:String = ""
     
     init(dictionary:[String : AnyObject]) {
         super.init()

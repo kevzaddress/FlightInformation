@@ -111,7 +111,7 @@ class LSYShimmerLabel: UILabel {
             group.animations = [startPointAnimation, endPointAnimation]
             group.duration = animateDuration
             group.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            group.repeatCount = FLT_MAX
+            group.repeatCount = Float.greatestFiniteMagnitude
             
             gradientLayer.add(group, forKey: shimmerAnimateKey)
         }
@@ -124,7 +124,7 @@ class LSYShimmerLabel: UILabel {
     }
     
     
-    func applicationDidEnterBackground(_ note:Notification) {
+    @objc func applicationDidEnterBackground(_ note:Notification) {
         stopAnimate()
     }
     
