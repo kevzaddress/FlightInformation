@@ -4,61 +4,61 @@
 <array>
 	<dict>
 		<key>subTitle</key>
-		<string>Understanding today&apos;s startups and tomorrow&apos;s innovators.</string>
+		<string>Inflight tools</string>
 		<key>title</key>
-		<string>Tech</string>
+		<string>Cockpit Tools</string>
 		<key>icon</key>
-		<string>SectionCoverTechnology.jpg</string>
+		<string>Cockpit@2x.jpg</string>
 		<key>standByIcon</key>
 		<string>fav19.jpg</string>
 	</dict>
 	<dict>
 		<key>subTitle</key>
-		<string>There&apos;s strength in community.</string>
+		<string>Inflight timing Tools</string>
 		<key>title</key>
-		<string>Pride</string>
+		<string>Time</string>
 		<key>icon</key>
-		<string>SectionCoverLGBTQ.jpg</string>
+		<string>Time@2x.jpg</string>
 		<key>standByIcon</key>
 		<string>fav11.jpg</string>
 	</dict>
 	<dict>
 		<key>subTitle</key>
-		<string>Essential news and analysis from the world&apos;s best sources.</string>
+		<string>Fuel Calculations</string>
 		<key>title</key>
-		<string>Headlines</string>
+		<string>Fuel</string>
 		<key>icon</key>
-		<string>SectionCoverNews.jpg</string>
+		<string>Fuel@2x.jpg</string>
 		<key>standByIcon</key>
 		<string>fav16.jpg</string>
 	</dict>
 	<dict>
 		<key>subTitle</key>
-		<string>The top stories that everyone is talking about right now.</string>
+		<string>DG Tables and decodes</string>
 		<key>title</key>
-		<string>Trending</string>
+		<string>Dangerous Goods</string>
 		<key>icon</key>
-		<string>SectionCoverTrending.jpg</string>
+		<string>DangerousGoods@2x.jpeg</string>
 		<key>standByIcon</key>
 		<string>fav4.jpg</string>
 	</dict>
 	<dict>
 		<key>subTitle</key>
-		<string>Celebrity chatter,deals and the lowdown on TV,movies and tunes.</string>
+		<string>HOT calculations and SNOWTAM decodes</string>
 		<key>title</key>
-		<string>Pop Life</string>
+		<string>De-Icing</string>
 		<key>icon</key>
-		<string>SectionCoverEntertainment.jpg</string>
+		<string>DeIcing@2x.jpg</string>
 		<key>standByIcon</key>
 		<string>fav5.jpg</string>
 	</dict>
 	<dict>
 		<key>subTitle</key>
-		<string>What&apos;s trending in destinations,activities,fashion and culture.</string>
+		<string>Overtime and Allowance calculators</string>
 		<key>title</key>
 		<string>Lifestyle</string>
 		<key>icon</key>
-		<string>SectionCoverStyles.jpg</string>
+		<string>Money@2x.jpg</string>
 		<key>standByIcon</key>
 		<string>fav6.jpg</string>
 	</dict>
