@@ -1,10 +1,10 @@
 //
 //  LSYShimmerLabel.swift
-//  LSYPaper
+//  FlightInfo
 //
-//  Created by 梁树元 on 1/8/16.
-//  Copyright © 2016 allsome.love. All rights reserved.
-
+//  Created by Kevin Smith on 22/7/18.
+//  Copyright © 2018 Kevin Smith. All rights reserved.
+//
 // ********* Heavily refer to MTAnimatedLabel *********
 
 import UIKit
@@ -111,7 +111,7 @@ class LSYShimmerLabel: UILabel {
             group.animations = [startPointAnimation, endPointAnimation]
             group.duration = animateDuration
             group.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            group.repeatCount = FLT_MAX
+            group.repeatCount = Float.greatestFiniteMagnitude
             
             gradientLayer.add(group, forKey: shimmerAnimateKey)
         }
@@ -124,7 +124,7 @@ class LSYShimmerLabel: UILabel {
     }
     
     
-    func applicationDidEnterBackground(_ note:Notification) {
+    @objc func applicationDidEnterBackground(_ note:Notification) {
         stopAnimate()
     }
     

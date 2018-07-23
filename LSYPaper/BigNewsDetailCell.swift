@@ -1,9 +1,9 @@
 //
 //  NewsDetailCell.swift
-//  LSYPaper
+//  FlightInfo
 //
-//  Created by 梁树元 on 1/9/16.
-//  Copyright © 2016 allsome.love. All rights reserved.
+//  Created by Kevin Smith on 22/7/18.
+//  Copyright © 2018 Kevin Smith. All rights reserved.
 //
 
 import UIKit
@@ -14,8 +14,8 @@ public let bottomViewDefaultHeight:CGFloat = 55
  let newsViewWidth:CGFloat = (SCREEN_WIDTH - 50) / 2
  let shiningImageHeight:CGFloat = (SCREEN_WIDTH - 50) * 296 / 325
  let newsViewY:CGFloat = SCREEN_HEIGHT - 20 - bottomViewDefaultHeight - newsViewWidth * 2
- let endAngle:CGFloat = CGFloat(M_PI) / 2.5
- let startAngle:CGFloat = CGFloat(M_PI) / 3.3
+ let endAngle:CGFloat = CGFloat(Double.pi) / 2.5
+ let startAngle:CGFloat = CGFloat(Double.pi) / 3.3
  let animateDuration:Double = 0.25
  let miniScale:CGFloat = 0.97
  let maxFoldAngle:CGFloat = 1.0
@@ -132,7 +132,7 @@ class BigNewsDetailCell: UICollectionViewCell {
         return CATransform3DConcat(CATransform3DRotate(transform3D, transform3DAngle, 1, 0, 0), CATransform3DMakeTranslation(translationInSelf.x, 0, 0))
     }
      var foldScale:CGFloat {
-        let a = (normalScale - 1) / ((maxFoldAngle - minFoldAngle) * CGFloat(M_PI))
+        let a = (normalScale - 1) / ((maxFoldAngle - minFoldAngle) * CGFloat(Double.pi))
         let b = 1 - (normalScale - 1) * minFoldAngle / (maxFoldAngle - minFoldAngle)
         return a * transform3DAngleFold + b <= 1 ? 1 : a * transform3DAngleFold + b
     }
@@ -141,7 +141,7 @@ class BigNewsDetailCell: UICollectionViewCell {
     }
      var transformEndedConcat:CATransform3D {
         let scale = normalScale
-        return CATransform3DConcat(CATransform3DConcat(CATransform3DRotate(transform3D, CGFloat(M_PI), 1, 0, 0), CATransform3DMakeTranslation(0, translationYForView / scale, 0)), CATransform3DMakeScale(scale, scale, 1))
+        return CATransform3DConcat(CATransform3DConcat(CATransform3DRotate(transform3D, CGFloat(Double.pi), 1, 0, 0), CATransform3DMakeTranslation(0, translationYForView / scale, 0)), CATransform3DMakeScale(scale, scale, 1))
     }
      var transform3DAngle:CGFloat {
         let cosUpper = locationInSelf.y - newsViewY >= (newsViewWidth * 2) ? (newsViewWidth * 2) : locationInSelf.y - newsViewY
@@ -196,7 +196,7 @@ class BigNewsDetailCell: UICollectionViewCell {
         newsView.layer.shadowOffset = CGSize(width: 0, height: baseShadowRedius)
         newsView.layer.shadowOpacity = 0.4
         newsView.layer.shadowRadius = baseShadowRedius
-        upperScreenShot.layer.transform = CATransform3DMakeRotation(CGFloat(M_PI), 1, 0, 0)
+        upperScreenShot.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi), 1, 0, 0)
         let pan = UIPanGestureRecognizer(target: self, action: #selector(BigNewsDetailCell.handleNewsPanGesture(_:)))
         pan.delegate = self
         newsView.addGestureRecognizer(pan)
@@ -290,8 +290,8 @@ class BigNewsDetailCell: UICollectionViewCell {
             upperScreenShot.image = self.getSubImageFrom(self.getWebViewScreenShot(), frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_WIDTH))
             webView.scrollView.panGestureRecognizer.isEnabled = false
             webView.alpha = 0.0
-            let ratio = (M_PI - Double(transform3DAngleFold)) / M_PI
-            let alpha:CGFloat = transform3DAngleFold / CGFloat(M_PI) >= 0.5 ? 1.0 : 0.0
+            let ratio = (Double.pi - Double(transform3DAngleFold)) / Double.pi
+            let alpha:CGFloat = transform3DAngleFold / CGFloat(Double.pi) >= 0.5 ? 1.0 : 0.0
             UIView.animate(withDuration: (animateDuration * 2 + 0.2) * ratio, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1.0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
                 self.newsView.layer.transform = self.transformConcatFold
                 self.shiningView.layer.transform = self.transformConcatFold
@@ -313,10 +313,10 @@ class BigNewsDetailCell: UICollectionViewCell {
             webView.scrollView.panGestureRecognizer.isEnabled = true
             velocityInSelf = recognizer.velocity(in: self)
             if self.velocityInSelf.y < 0 {
-                if transform3DAngleFold / CGFloat(M_PI) < 0.5 {
-                    UIView.animate(withDuration: animateDuration * Double((CGFloat(M_PI) - transform3DAngleFold) / CGFloat(M_PI * 2)), delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
-                        self.newsView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(M_PI_2), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, translationYForView, 0))
-                        self.shiningView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(M_PI_2), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, translationYForView, 0))
+                if transform3DAngleFold / CGFloat(Double.pi) < 0.5 {
+                    UIView.animate(withDuration: animateDuration * Double((CGFloat(Double.pi) - transform3DAngleFold) / CGFloat(Double.pi * 2)), delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
+                        self.newsView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(Double.pi), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, translationYForView, 0))
+                        self.shiningView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(Double.pi), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, translationYForView, 0))
                         }, completion: { (stop:Bool) -> Void in
                             self.upperScreenShot.alpha = 1.0
                             self.shiningImage.alpha = 0.0
@@ -393,7 +393,7 @@ class BigNewsDetailCell: UICollectionViewCell {
         }else if (recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.ended){
             velocityInSelf = recognizer.velocity(in: self)
             if self.velocityInSelf.y <= 0 {
-                if transform3DAngle / CGFloat(M_PI) < 0.5 {
+                if transform3DAngle / CGFloat(Double.pi) < 0.5 {
                     tapNewsView()
                 }else {
                     UIView.animate(withDuration: animateDuration, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
@@ -532,9 +532,9 @@ class BigNewsDetailCell: UICollectionViewCell {
     }
     
      func tapNewsView() {
-        UIView.animate(withDuration: animateDuration * Double((CGFloat(M_PI) - transform3DAngleFold) / CGFloat(M_PI * 2)), delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
-            self.newsView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(M_PI_2), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, 0, 0))
-            self.shiningView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(M_PI_2), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, 0, 0))
+        UIView.animate(withDuration: animateDuration * Double((CGFloat(Double.pi) - transform3DAngleFold) / CGFloat(Double.pi * 2)), delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
+            self.newsView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(Double.pi), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, 0, 0))
+            self.shiningView.layer.transform = CATransform3DConcat(CATransform3DRotate(self.transform3D, CGFloat(Double.pi), 1, 0, 0),CATransform3DMakeTranslation(self.translationInSelf.x, 0, 0))
             self.shiningImage.transform = CGAffineTransform(translationX: 0, y: shiningImageHeight + newsViewWidth * 2 * (self.transform3DAngle - startAngle) / (endAngle - startAngle))
             }, completion: { (stop:Bool) -> Void in
                 self.shiningImage.alpha = 0.0
@@ -582,7 +582,7 @@ class BigNewsDetailCell: UICollectionViewCell {
     }
     
      func gestureStateChangedSetting(_ targetAngle:CGFloat) {
-        if targetAngle / CGFloat(M_PI) >= 0.5 {
+        if targetAngle / CGFloat(Double.pi) >= 0.5 {
             upperScreenShot.alpha = 1.0
             shiningImage.alpha = 0
             realShiningView.alpha = 0.5
